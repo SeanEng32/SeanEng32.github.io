@@ -77,11 +77,19 @@ nav a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.main1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 article {
-  flex-basis: 73%;
+  flex-basis: 50%;
 }
 figure {
   margin-top: 3rem 0 0 0;
@@ -125,20 +133,31 @@ footer a {
   display: block;
   margin: 0 1rem 3rem 1rem;
 }
-.shop-img {
-  float: right;
-  margin-left: auto;
-  margin-top: -175px;
-}
 .section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 25px;
 }
-@media (max-width:800px) {
+.product-text {
+  margin-left: 50px;
+}
+.shop-img {
+  flex-basis: 50%;
+}
+
+@media (max-width: 800px) {
   .section {
     display: flex;
     flex-direction: column;
+  }
+  .product-text {
+    margin-left: 0;
+  }
+  .shop-img {
+    flex-basis: 100%;
+}
+  .figure {
+    flex-basis: 100%;
   }
 }
