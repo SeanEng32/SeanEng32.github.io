@@ -94,11 +94,7 @@ article {
 figure {
   margin-top: 3rem 0 0 0;
   flex-basis: 25%;
-  background-color: #59331d;
   border-radius: 10px;
-  margin-left: auto;
-  margin-top: auto;
-  
 }
 .button {
   display: inline-block;
@@ -157,7 +153,14 @@ footer a {
   .shop-img {
     flex-basis: 100%;
 }
-  .figure {
+  figure {
     flex-basis: 100%;
+  }
+  article {
+    flex-basis: 100%;
+  }
+  nav ul {
+    flex-flow: column wrap;
+    align-items: center;
   }
 }
